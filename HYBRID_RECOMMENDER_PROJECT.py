@@ -214,7 +214,7 @@ def item_based_recommender(movie_name, user_movie_df):
 
 # Step 5: Provide the top 5 films, excluding the selected movie itself, as recommendations
 movies_from_item_based = item_based_recommender(movie[movie["movieId"] == movie_id]["title"].values[0], user_movie_df)
-# 1'den 6'ya kadar. 0'da filmin kendisi var. Onu dışarda bıraktık.
+# From 1 to 6, the movie is in 0. We left it outside.
 movies_from_item_based[1:6].index
 
 
