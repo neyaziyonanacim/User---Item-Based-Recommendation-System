@@ -15,7 +15,7 @@ pd.pandas.set_option('display.max_columns', None)
 pd.pandas.set_option('display.width', 300)
 
 # Step 1: Read Movie and Rating datasets.
-# movieId, film adı ve filmin tür bilgilerini içeren veri seti
+# Dataset including movieId, movie name and kind of movie  
 movie = pd.read_csv('datasets/movie.csv')
 movie.head()
 movie.shape
